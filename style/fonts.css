@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@font-face {
+    font-family: "MadouFutoMaruGothic";
+    src: url('../fonts/MadouFutoMaruGothic-d9Xo7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    color: white;
+}
+
+/* Используется Press Start 2P только для Английских и Русский слов (элементы были отмечены маркеровкой lang) */
+:lang(en),
+:lang(ru),
+:lang(en) * ,
+:lang(ru) * {
+    font-family: "Press Start 2P", "MadouFutoMaruGothic", sans-serif;
+}
